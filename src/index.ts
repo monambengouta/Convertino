@@ -6,4 +6,6 @@ export * from "./convert-data-type/convert-other-type";
 export const whoim = () => {
   if ("development" === process.env.NODE_ENV) {
     console.log("convertino package to convert what u want");
-  }};
+  }
+};
+whoim();

@@ -6,7 +6,7 @@
 //convert array to object
 function convertArrayToObject(arr: any[]): object {
   return {
-    arr: arr,
+    arr: arr
   };
 }
 //convert array to string
@@ -56,7 +56,7 @@ function convertArrayToPageType(arr: any[], pagetype: string) {
       );
     default:
       return {
-        arr: arr,
+        arr: arr
       };
   }
 }
