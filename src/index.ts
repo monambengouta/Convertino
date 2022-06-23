@@ -7,5 +7,6 @@ export const whoim = () => {
   if ("development" === process.env.NODE_ENV) {
     console.log("convertino package to convert what u want");
   }
+  return "whoim";
 };
 whoim();
