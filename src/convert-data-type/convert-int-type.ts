@@ -25,7 +25,7 @@ function convertNumberToArray(num: number): number[] {
 //convert Number to object
 function convertNumberToObject(num: number): object {
   return {
-    num: num,
+    num: num
   };
 }
 
@@ -44,5 +44,5 @@ export {
   convertNumberToBoolean,
   convertNumberToArray,
   convertNumberToObject,
-  convertNumberToNthSizeNumber,
+  convertNumberToNthSizeNumber
 };

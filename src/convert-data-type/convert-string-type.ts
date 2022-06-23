@@ -9,13 +9,13 @@ function convertStringToInt(str: string): number {
 }
 //convert String to Boolean
 function convertStringToBoolean(str: string): boolean {
-  return str === '0' || str.toUpperCase() === 'False' ? false : true;
+  return str === "0" || str.toUpperCase() === "False" ? false : true;
 }
 
 //convert String to array
 
 function convertStringToArray(str: string): string[] {
-  return str.split('');
+  return str.split("");
 }
 
 //convert String to array with separator
@@ -29,7 +29,7 @@ function convertStringToArrayWithSeparator(
 // convert String to Object
 function convertStringToObject(str: string): object {
   return {
-    str: str,
+    str: str
   };
 }
 // convertString to Date
@@ -59,32 +59,32 @@ function convertStringToJSON(str: string): object {
 }
 //convert String to XML
 function convertStringToXML(str: string): object {
-  return new DOMParser().parseFromString(str, 'text/xml');
+  return new DOMParser().parseFromString(str, "text/xml");
 }
 //convert String to HTML
 function convertStringToHTML(str: string): object {
-  return new DOMParser().parseFromString(str, 'text/html');
+  return new DOMParser().parseFromString(str, "text/html");
 }
 //convert String to xhtml+xml
 function convertStringToXHTML(str: string): object {
-  return new DOMParser().parseFromString(str, 'application/xhtml+xml');
+  return new DOMParser().parseFromString(str, "application/xhtml+xml");
 }
 //convert String to pagetype
 function convertStringToPagetype(str: string, pagetype: string): object {
   switch (pagetype) {
-    case 'text/html':
-      return new DOMParser().parseFromString(str, 'text/html');
-    case 'text/xml':
-      return new DOMParser().parseFromString(str, 'text/xml');
-    case 'application/json':
+    case "text/html":
+      return new DOMParser().parseFromString(str, "text/html");
+    case "text/xml":
+      return new DOMParser().parseFromString(str, "text/xml");
+    case "application/json":
       return JSON.parse(str);
-    case 'application/xml':
-      return new DOMParser().parseFromString(str, 'application/xml');
-    case 'application/xhtml+xml':
-      return new DOMParser().parseFromString(str, 'application/xhtml+xml');
+    case "application/xml":
+      return new DOMParser().parseFromString(str, "application/xml");
+    case "application/xhtml+xml":
+      return new DOMParser().parseFromString(str, "application/xhtml+xml");
     default:
       return {
-        str: str,
+        str: str
       };
   }
 }
@@ -108,5 +108,5 @@ export {
   convertStringToBoolean,
   convertStringToInt,
   convertStringToFunction,
-  convertStringToPagetype,
+  convertStringToPagetype
 };

@@ -105,5 +105,5 @@ export {
   convertObjectValuesToArray,
   convertObjectToMap,
   convertObjectToSet,
-  convertObjectToDate,
+  convertObjectToDate
 };
