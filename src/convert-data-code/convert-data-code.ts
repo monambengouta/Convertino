@@ -64,5 +64,5 @@ export {
   convertHexadecimalToOctal,
   convertOctalToBinary,
   convertOctalToDecimal,
-  convertOctalToHexadecimal,
+  convertOctalToHexadecimal
 };

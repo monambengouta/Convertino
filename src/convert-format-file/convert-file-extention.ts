@@ -21,5 +21,5 @@ export {
   convertFileExtentionToJS,
   convertFileExtentionToTS,
   convertFileExtentionToJSON,
-  convertFileExtentionToOther,
+  convertFileExtentionToOther
 };

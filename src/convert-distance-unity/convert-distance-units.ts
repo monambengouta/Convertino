@@ -127,5 +127,5 @@ export {
   convertFathomToMeter,
   convertLightYearToKilometre,
   convertXitchToYards,
-  convertYertToYards,
+  convertYertToYards
 };

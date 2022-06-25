@@ -18,12 +18,15 @@ function convertRgbToHex(r: number, g: number, b: number): string {
 }
 //convert rgb to hsl
 function convertRgbToHsl(r: number, g: number, b: number): number[] {
-  (r /= 255), (g /= 255), (b /= 255);
-  let max = Math.max(r, g, b),
-    min = Math.min(r, g, b);
+  r /= 255;
+  g /= 255;
+  b /= 255;
+  let max = Math.max(r, g, b);
+  let min = Math.min(r, g, b);
   let h,
     s,
     l = (max + min) / 2;
+
   if (max === min) {
     h = s = 0; // achromatic
   } else {
@@ -39,6 +42,7 @@ function convertRgbToHsl(r: number, g: number, b: number): number[] {
       case b:
         h = (r - g) / d + 4;
         break;
+      
     }
     h /= 6;
   }
@@ -136,5 +140,5 @@ export {
   convertHslaToHex,
   convertRgbToRgba,
   convertRgbaToRgb,
-  convertRgbaToHsla,
+  convertRgbaToHsla
 };

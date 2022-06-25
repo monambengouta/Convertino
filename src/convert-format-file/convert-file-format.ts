@@ -50,5 +50,5 @@ export {
   convertFileToOctal,
   convertFileToDataFormatType,
   convertFileToFunction,
-  convertFileToJSON,
+  convertFileToJSON
 };

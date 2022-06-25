@@ -29,7 +29,7 @@ function convertStringToArrayWithSeparator(
 // convert String to Object
 function convertStringToObject(str: string): object {
   return {
-    str: str
+    str: str,
   };
 }
 // convertString to Date
@@ -84,7 +84,7 @@ function convertStringToPagetype(str: string, pagetype: string): object {
       return new DOMParser().parseFromString(str, "application/xhtml+xml");
     default:
       return {
-        str: str
+        str: str,
       };
   }
 }
@@ -94,20 +94,29 @@ function convertStringToFunction(str: string): Function {
 }
 //convert string to binary
 function convertStringToBinary(str: string): string {
-  return str.split("").map(char => char.charCodeAt(0).toString(2)).join("");
-  }
+  return str
+    .split("")
+    .map((char) => char.charCodeAt(0).toString(2))
+    .join("");
+}
 //convert string to decimal
 function convertStringToDecimal(str: string): number {
   return parseInt(str, 10);
-  }
+}
 //convert string to hexadecimal
 function convertStringToHexadecimal(str: string): string {
-  return str.split("").map(char => char.charCodeAt(0).toString(16)).join("");
-  }
+  return str
+    .split("")
+    .map((char) => char.charCodeAt(0).toString(16))
+    .join("");
+}
 //convert string to octal
 function convertStringToOctal(str: string): string {
-  return str.split("").map(char => char.charCodeAt(0).toString(8)).join("");
-  }
+  return str
+    .split("")
+    .map((char) => char.charCodeAt(0).toString(8))
+    .join("");
+}
 export {
   convertStringToXHTML,
   convertStringToHTML,
@@ -125,7 +134,7 @@ export {
   convertStringToInt,
   convertStringToFunction,
   convertStringToPagetype,
-  convertStringToBinary,  
+  convertStringToBinary,
   convertStringToDecimal,
   convertStringToHexadecimal,
   convertStringToOctal
