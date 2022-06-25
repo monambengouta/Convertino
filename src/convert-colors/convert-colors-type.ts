@@ -62,6 +62,7 @@
     }
 //convert hsla to hsl
     function convertHslaToHsl(h: number, s: number, l: number, a: number): number[] {
+        a=a||1;
         return [h, s, l];
     }
 //convert hsla to rgb
@@ -80,6 +81,7 @@
     }
 //convert rgba to rgb
     function convertRgbaToRgb(r: number, g: number, b: number, a: number): number[] {
+        a=a||1;
         return [r, g, b];
     }
 //convert rgba to hsla
@@ -100,6 +102,6 @@ export {convertHexToRgb,
         convertRgbToRgba,
         convertRgbaToRgb,
         convertRgbaToHsla};
-        
+
     
 
