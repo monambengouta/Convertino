@@ -8,7 +8,7 @@ function convertHexToRgb(hex: string): number[] {
     ? [
         parseInt(result[1], 16),
         parseInt(result[2], 16),
-        parseInt(result[3], 16),
+        parseInt(result[3], 16)
       ]
     : [0, 0, 0];
 }
@@ -42,7 +42,6 @@ function convertRgbToHsl(r: number, g: number, b: number): number[] {
       case b:
         h = (r - g) / d + 4;
         break;
-      
     }
     h /= 6;
   }
