@@ -92,6 +92,22 @@ function convertStringToPagetype(str: string, pagetype: string): object {
 function convertStringToFunction(str: string): Function {
   return Function(str);
 }
+//convert string to binary
+function convertStringToBinary(str: string): string {
+  return str.split("").map(char => char.charCodeAt(0).toString(2)).join("");
+  }
+//convert string to decimal
+function convertStringToDecimal(str: string): number {
+  return parseInt(str, 10);
+  }
+//convert string to hexadecimal
+function convertStringToHexadecimal(str: string): string {
+  return str.split("").map(char => char.charCodeAt(0).toString(16)).join("");
+  }
+//convert string to octal
+function convertStringToOctal(str: string): string {
+  return str.split("").map(char => char.charCodeAt(0).toString(8)).join("");
+  }
 export {
   convertStringToXHTML,
   convertStringToHTML,
@@ -108,5 +124,9 @@ export {
   convertStringToBoolean,
   convertStringToInt,
   convertStringToFunction,
-  convertStringToPagetype
+  convertStringToPagetype,
+  convertStringToBinary,  
+  convertStringToDecimal,
+  convertStringToHexadecimal,
+  convertStringToOctal
 };

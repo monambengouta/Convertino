@@ -10,14 +10,13 @@ or
 ```bash
 npm install -g convertino
 ```
-## for any probleme send me email on monaam.bengouta@gmail.com
+## If you have any issues please send me email on: monaam.bengouta@gmail.com
 
 ## or visit my github page
 https://github.com/monambengouta
 
 ## Buy me a coffee
-
-[![Buy me a coffee](https://img.shields.io/badge/coffee-buy-me-a-coffee-green.svg)](https://www.buymeacoffee.com/monambengouta)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/monambengouta)
 
 #### License
 
