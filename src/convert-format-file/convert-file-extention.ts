@@ -8,17 +8,18 @@ function convertFileExtentionToJS(file: string): string {
 // convert txt file to ts file
 function convertFileExtentionToTS(file: string): string {
     return file.replace(/\.txt$/, ".ts");
-}  
+}
 // convert txt file to json file
-function convertFileExtentionToJSON(file: string): string { 
+function convertFileExtentionToJSON(file: string): string {
     return file.replace(/\.txt$/, ".json");
 } // convert txt file to other file
-function convertFileExtentionToOther(file: string,extention:string): string {
+function convertFileExtentionToOther(file: string, extention: string): string {
     return file.replace(/\.txt$/, extention);
 } // convert txt file to binary file
 
-export { 
+export {
     convertFileExtentionToJS,
-     convertFileExtentionToTS,
-      convertFileExtentionToJSON,
-      convertFileExtentionToOther };
+    convertFileExtentionToTS,
+    convertFileExtentionToJSON,
+    convertFileExtentionToOther
+};

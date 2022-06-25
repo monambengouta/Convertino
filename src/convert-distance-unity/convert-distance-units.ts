@@ -80,7 +80,7 @@ function convertTerrestrialMileToMeter(terrestrialMile: number): number {
 //convert foot to inch
 function convertFootToInch(foot: number): number {
     return foot * 12;
-}       
+}
 //convert fathom to yards
 function convertFathomToYards(fathom: number): number {
     return fathom * 2.25;
@@ -91,7 +91,7 @@ function convertFathomToMeter(fathom: number): number {
 }
 //convert light-year to kilometre
 function convertLightYearToKilometre(lightYear: number): number {
-    return lightYear * 9460730472   ;
+    return lightYear * 9460730472;
 }
 //conert Xitch to yards
 function convertXitchToYards(xitch: number): number {
@@ -103,30 +103,30 @@ function convertYertToYards(yert: number): number {
 }
 
 export {
-        convertKilometerToMeter,
-        convertKilometerToCentimeter,
-        convertKilometerToMillimeter,
-        convertKilometerToMicrometer,
-        convertKilometerToNanometer,
-        convertKilometerToPicometer,
-        convertKilometerToFemtometer,
-        convertKilometerToAttometer,
-        convertKilometerToZeptometer,
-        convertMileToMeter,
-        convertMileToCentimeter,
-        convertMileToMillimeter,
-        convertMileToMicrometer,
-        convertMileToNanometer,
-        convertMileToPicometer,
-        convertInchToCentimeter,    
-        convertFootToMeter,
-        convertYardToMeter,
-        convertTerrestrialMileToMeter,
-        convertFootToInch,
-        convertFathomToYards,
-        convertFathomToMeter,
-        convertLightYearToKilometre,
-        convertXitchToYards,
-        convertYertToYards
-    }
+    convertKilometerToMeter,
+    convertKilometerToCentimeter,
+    convertKilometerToMillimeter,
+    convertKilometerToMicrometer,
+    convertKilometerToNanometer,
+    convertKilometerToPicometer,
+    convertKilometerToFemtometer,
+    convertKilometerToAttometer,
+    convertKilometerToZeptometer,
+    convertMileToMeter,
+    convertMileToCentimeter,
+    convertMileToMillimeter,
+    convertMileToMicrometer,
+    convertMileToNanometer,
+    convertMileToPicometer,
+    convertInchToCentimeter,
+    convertFootToMeter,
+    convertYardToMeter,
+    convertTerrestrialMileToMeter,
+    convertFootToInch,
+    convertFathomToYards,
+    convertFathomToMeter,
+    convertLightYearToKilometre,
+    convertXitchToYards,
+    convertYertToYards
+}
 
