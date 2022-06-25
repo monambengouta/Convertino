@@ -107,7 +107,7 @@ function convertStringToDecimal(str: string): number {
 function convertStringToHexadecimal(str: string): string {
   return str
     .split("")
-    .map(char=> char.charCodeAt(0).toString(16))
+    .map(char => char.charCodeAt(0).toString(16))
     .join("");
 }
 //convert string to octal
